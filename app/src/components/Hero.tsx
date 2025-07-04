@@ -1,11 +1,8 @@
-import ParticlesBackground from './ParticlesBackground';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-950 overflow-hidden px-6 py-24">
       
-      {/* Particles Behind Content */}
-      <ParticlesBackground />
 
       {/* Glassmorphic Content Box */}
       <div className="relative z-10 max-w-5xl mx-auto text-center bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-2xl p-10 md:p-20 transition-all duration-500">
