@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
   </a>
 
   <a
-    href='https://arjun1127.github.io/myResume.pdf'
+    href='https://arjun1127.github.io/ArjunWebSite/myResume.pdf'
     download
     target="_blank"
     rel="noopener noreferrer"
