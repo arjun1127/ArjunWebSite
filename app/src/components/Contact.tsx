@@ -9,8 +9,10 @@ const Contact: React.FC = () => {
       className="w-full min-h-screen py-24 px-6 bg-transparent"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
-        <div className="z-10">
+
+        {/* LEFT CONTENT */}
+        <div className="z-10 text-center lg:text-left">
+
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -26,12 +28,13 @@ const Contact: React.FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="text-cyan-700 mb-10 max-w-md"
+            className="text-cyan-700 mb-10 max-w-md mx-auto lg:mx-0"
           >
-            Have a project in mind or want to collaborate?  
+            Have a project in mind or want to collaborate?
             Reach out and let’s build something meaningful.
           </motion.p>
 
+          {/* FORM */}
           <motion.form
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -41,6 +44,7 @@ const Contact: React.FC = () => {
               rounded-2xl border border-black/20
               shadow-[0_30px_80px_rgba(0,0,0,0.35)]
               p-6 sm:p-10
+              max-w-lg mx-auto lg:mx-0
             "
           >
             <div className="mb-5">
@@ -81,14 +85,22 @@ const Contact: React.FC = () => {
             </button>
           </motion.form>
 
-          <div className="flex gap-6 mt-8 text-zinc-500 text-xl">
-            <a href="mailto:arjunkrao2004@gmail.com" className="hover:text-zinc-800"><FaEnvelope /></a>
-            <a href="https://github.com/arjun1127" target="_blank" className="hover:text-zinc-800"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/arjun-rao1127/" target="_blank" className="hover:text-zinc-800"><FaLinkedin /></a>
+          {/* SOCIAL ICONS */}
+          <div className="flex justify-center lg:justify-start gap-6 mt-8 text-zinc-500 text-xl">
+            <a href="mailto:arjunkrao2004@gmail.com" className="hover:text-zinc-800">
+              <FaEnvelope />
+            </a>
+            <a href="https://github.com/arjun1127" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-800">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/arjun-rao1127/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-800">
+              <FaLinkedin />
+            </a>
           </div>
         </div>
 
-        <div className="relative h-[420px] lg:h-[520px] rounded-3xl overflow-hidden">
+        {/* RIGHT SPLINE — DESKTOP ONLY */}
+        <div className="relative h-[420px] lg:h-[520px] rounded-3xl overflow-hidden hidden lg:block">
           <SplineContact url="https://prod.spline.design/p-KUDgQShUkmYoOO/scene.splinecode" />
         </div>
 

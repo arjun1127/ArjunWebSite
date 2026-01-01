@@ -6,6 +6,7 @@ interface ProjectCardProps {
   link: string;
   color: string;
   logo?: React.ReactNode; 
+  compact?: boolean;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -14,7 +15,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
   color,
   logo,
+  compact = false,
 }) => {
+  if (compact) {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-xl p-4 text-white text-sm font-semibold shadow-lg hover:scale-105 transition"
+        style={{ backgroundColor: color }}
+      >
+        {title}
+      </a>
+    );
+  }
   return (
     <motion.div
       whileInView={{ opacity: 1, y: 0 }}

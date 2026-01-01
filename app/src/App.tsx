@@ -22,8 +22,8 @@ const App: React.FC = () => {
 
   return (
     <>
-     
-      <AnimatedCursor
+     <div className="hidden md:block">
+       <AnimatedCursor
         innerSize={8}
         outerSize={35}
         color="255, 255, 255"
@@ -31,7 +31,10 @@ const App: React.FC = () => {
         innerScale={1}
         outerScale={2}
         clickables={['a', 'button', '.link', '[role="button"]']}
+
       />
+     </div>
+     
 
           <SceneLayout>
       <div className="text-white font-sans scroll-smooth h">

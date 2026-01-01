@@ -8,7 +8,7 @@ const Loader: React.FC = () => {
       animate={{ opacity: 0 }}
       transition={{ duration: 1.2, delay: 1.4 }}
     >
-      <h1 className="text-3xl font-bold animate-pulse">Loading Portfolio...</h1>
+      <h1 className="text-3xl font-bold animate-pulse">Loading Portfolio...<br /> Use Desktop for better visuals </h1>
     </motion.div>
   );
 };
