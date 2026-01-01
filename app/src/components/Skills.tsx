@@ -38,7 +38,7 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="w-full py-20 px-4 bg-transparent overflow-hidden text-white">
       <div className="absolute inset-0 z-0 block md:hidden">
-        <SplineProject url="https://prod.spline.design/5G2zuftHWLDTjqo4/scene.splinecode" />
+        <SplineProject url="https://prod.spline.design/9qzkNMOwrmkdgWdO/scene.splinecode" />
       </div>
       <div className="max-w-6xl mx-auto text-center">
 

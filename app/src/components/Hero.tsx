@@ -18,9 +18,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-gray-300 text-base leading-relaxed">
-            Front-end focused developer skilled in JavaScript, React, and Node.js,
-            with experience building real-time systems, scalable backends, and
-            clean UI-driven applications.
+           I build mordern web experiences with react, 3D visuals and backend systems with AI , and I aspire to work in Japnan as a software engineer.
           </p>
         </div>
 
@@ -33,12 +31,12 @@ const Hero: React.FC = () => {
   "
 >
   <a
-    href="#projects"
+    href="#skills"
     className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold
       text-sm lg:text-lg px-5 py-2 lg:px-8 lg:py-3
       rounded-full shadow-xl transition-all duration-300 transform hover:scale-105"
   >
-     Projects
+     skills
   </a>
 
   <a
@@ -74,16 +72,7 @@ const Hero: React.FC = () => {
     Resume
   </a>
 
-  <a
-    href="https://www.linkedin.com/in/arjun-rao-1520a424a/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold
-      text-sm lg:text-lg px-5 py-2 lg:px-8 lg:py-3
-      rounded-full shadow-xl transition-all duration-300 transform hover:scale-105"
-  >
-    LinkedIn
-  </a>
+
 </div>
 
 {/* SOCIAL ICONS – BELOW BUTTONS */}

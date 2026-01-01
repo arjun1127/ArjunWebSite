@@ -1,7 +1,7 @@
 import ProjectCard from './ProjectCard';
 import { FaServer, FaBrain, FaLanguage, FaHospitalSymbol, FaShoppingCart, FaCloud } from 'react-icons/fa';
 import { SiPostgresql } from 'react-icons/si';
-import SplineProject from "./spline/splineUse";
+// import SplineProject from "./spline/splineUse";
 import React, { useState } from 'react';
 const projectData = [
   {
@@ -85,9 +85,9 @@ const Projects: React.FC = () => {
       id="projects"
       className="relative w-full min-h-screen bg-transparent overflow-hidden py-24 px-6"
     >
-      <div className="absolute inset-0 z-0 hidden lg:block">
+      {/* <div className="absolute inset-0 z-0 hidden lg:block">
         <SplineProject url="https://prod.spline.design/5G2zuftHWLDTjqo4/scene.splinecode" />
-      </div>
+      </div> */}
 
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-900 via-cyan-300 to-indigo-700 mb-12 lg:mb-16">
